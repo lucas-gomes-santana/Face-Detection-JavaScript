@@ -19,7 +19,7 @@ function startVideo() {
 }
 
 video.addEventListener('playing', () => {  // Replacing 'play' for 'playing'
-  console.log("Vídeo pronto para reprodução!");
+  console.log("Video playing");
   const canvas = faceapi.createCanvasFromMedia(video);
   document.body.append(canvas);
   const displaySize = { width: video.width, height: video.height };
